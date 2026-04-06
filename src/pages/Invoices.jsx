@@ -3,7 +3,7 @@ import axios from 'axios';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
-const api = axios.create({ baseURL: 'https://invoice-extraction-backend-pkx8.onrender.com/api' });
+const api = axios.create({ baseURL: 'http://localhost:5000/api' });
 
 const Invoices = () => {
   const [invoices, setInvoices] = useState([]);

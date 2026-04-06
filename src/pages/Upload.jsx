@@ -3,7 +3,7 @@ import axios from 'axios';
 import { UploadCloud, CheckCircle, Loader, File as FileIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const api = axios.create({ baseURL: 'https://invoice-extraction-backend-pkx8.onrender.com/api' });
+const api = axios.create({ baseURL: 'http://localhost:5000/api' });
 
 const Upload = () => {
   const [dragActive, setDragActive] = useState(false);
